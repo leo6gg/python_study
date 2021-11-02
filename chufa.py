@@ -60,7 +60,7 @@ def get_num_factors(num):
     list0=[]
     tmp=2
     if num==tmp:
-        print num
+        print (num)
     else:
         while (num>=tmp or tmp<=num/2):
             k=num%tmp
@@ -69,7 +69,7 @@ def get_num_factors(num):
                 num=num/tmp  #更新
             else:
                 tmp=tmp+1  #同时更新除数值，不必每次都从头开始
-    print ' '.join(list0)+' '
+    print (' '.join(list0)+' ')
 
 def get_factors(num):
     while num!=1:
@@ -78,14 +78,14 @@ def get_factors(num):
                 num = num/i
                 L.append(str(i))
                 break
-    print ' '.join(L)+' '
+    print (' '.join(L)+' ')
 
 yyyy = 1
 rrrr = 131
 t0 = time.time()
 print(get_num_factors(yyyy))
 t1 = time.time()
-print t1-t0
+print (t1-t0)
 print(get_num_factors(rrrr))
 print(time.time()-t1)
 
